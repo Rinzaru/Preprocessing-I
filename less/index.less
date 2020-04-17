@@ -4,56 +4,605 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
+.borderLine {
+  border-style: none none solid none;
+  border-width: 1px;
+}
+
+.borderNone {
+  border-style: none;
+  width: 52%;
+  margin: 0 auto;
+}
+
+.workSectionBox {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skillBox {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: grey;
+  width: 412%;
+  font-weight: bold;
+  margin: 4px 0 4px 4px;
+}
+
+.container {
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+}
+
+.headContainer {
+  background-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+
+  img {
+    padding-left: 10%;
+    margin: 3% 0% 3% 25%;
+  }
+}
+
+.image {
+  margin-left: 30%;
+}
+
+.botContainer {
+  width: 80%;
+  margin: 0 auto;
+  border-style: none;
+
+  .midSection {
+    display: flex;
+    justify-content: space-between;
+
+    width: 95%;
+    .aboutSection {
+      .borderNone();
+      font-size: 20px;
+      margin-left: 20%;
+      margin-top: 1.5%;
+    }
+  }
+
+  .skillSection {
+    margin-top: 1.5%;
+    margin-right: 20%;
+    .skills {
+      font-size: 25px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: grey;
+      padding-right: 300px;
+    }
+    .eat {
+      .skillBox();
+    }
+    .sleep {
+      .skillBox();
+    }
+    .video {
+      .skillBox();
+    }
+    .game {
+      .skillBox();
+    }
+    .type {
+      font-weight: bold;
+      margin: 4px 0 4px 4px;
+    }
+  }
+}
+
+h3 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 2% 0;
+}
+
+.workSection {
+  font-size: 25px;
+  width: 65%;
+  margin-left: 25%;
+  .workBox {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 80%;
+    margin-right: 20%;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    .borderLine();
+  }
+  .years {
+    display: flex;
+    justify-content: space-between;
+    .borderLine();
+    .apple {
+      margin-left: 15%;
+    }
+  }
+  .company {
+    display: flex;
+    justify-content: space-between;
+    .borderLine();
+    .microsoft {
+      margin-left: 15%;
+    }
+  }
+  .position {
+    display: flex;
+    justify-content: space-between;
+    .amazon {
+      margin-left: 8%;
+    }
+  }
+}
+
+address {
+  margin-top: 1%;
+  width: 65%;
+  margin-bottom: 1%;
+  margin-left: 40%;
+  font-size: 25px;
+}
+
+#copyright {
+  width: 15%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .headContainer {
+    width: 100%;
+  }
+  .listMedia {
+    border-style: none;
+    list-style: circle;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .boxboi,
+  .boxboi2,
+  .boxboi3,
+  .boxboi4 {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  h1 {
+    margin-left: 20%;
+  }
+
+  .midSection {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    width: 100%;
+    .aboutHeader {
+      margin-left: 35%;
+    }
+    .aboutPara {
+      margin-left: 5%;
+      width: 120%;
+    }
+
+    .skillSection {
+      margin-top: 1.5%;
+      margin-right: 20%;
+      .personal {
+        margin-left: 35%;
+      }
+      .skills {
+        font-size: 25px;
+        border-style: none;
+        padding-right: 300px;
+        margin-left: 50%;
+      }
+
+      .eat {
+        .listMedia();
+      }
+      .sleep {
+        .listMedia();
+      }
+      .video {
+        .listMedia();
+      }
+      .game {
+        .listMedia();
+      }
+      .type {
+        font-weight: bold;
+        margin: 4px 0 4px 4px;
+        .listMedia();
+      }
+    }
+  }
+  .workHist {
+    margin-left: 20%;
+  }
+  .workSection {
+    width: 100%;
+
+    margin-left: 15%;
+    .apple {
+      margin-left: 30%;
+    }
+    .software {
+      margin-left: 15%;
+    }
+  }
+
+  address {
+    margin-left: 25%;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .headContainer {
+    width: 100%;
+  }
+  .listMedia {
+    border-style: none;
+    list-style: circle;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .boxboi,
+  .boxboi2,
+  .boxboi3,
+  .boxboi4 {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  h1 {
+    margin-left: 20%;
+  }
+
+  .midSection {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    width: 100%;
+    .aboutHeader {
+      margin-left: 35%;
+    }
+    .aboutPara {
+      margin-left: 5%;
+      width: 120%;
+    }
+
+    .skillSection {
+      margin-top: 1.5%;
+      margin-right: 20%;
+      .personal {
+        margin-left: 35%;
+      }
+      .skills {
+        font-size: 25px;
+        border-style: none;
+        padding-right: 300px;
+        margin-left: 50%;
+      }
+
+      .eat {
+        .listMedia();
+      }
+      .sleep {
+        .listMedia();
+      }
+      .video {
+        .listMedia();
+      }
+      .game {
+        .listMedia();
+      }
+      .type {
+        font-weight: bold;
+        margin: 4px 0 4px 4px;
+        .listMedia();
+      }
+    }
+  }
+  .workHist {
+    margin-left: 20%;
+  }
+  .workSection {
+    width: 100%;
+
+    margin-left: 15%;
+    .apple {
+      margin-left: 30%;
+    }
+    .software {
+      margin-left: 15%;
+    }
+  }
+
+  address {
+    margin-left: 25%;
+  }
+
+  img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .listMedia {
+    border-style: none;
+    list-style: circle;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .boxboi,
+  .boxboi2,
+  .boxboi3,
+  .boxboi4 {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  h1 {
+    margin-left: 20%;
+  }
+
+  .midSection {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    width: 100%;
+    .aboutHeader {
+      margin-left: 35%;
+    }
+    .aboutPara {
+      margin-left: 5%;
+      width: 120%;
+    }
+
+    .skillSection {
+      margin-top: 1.5%;
+      margin-right: 20%;
+      .personal {
+        margin-left: 35%;
+      }
+      .skills {
+        font-size: 25px;
+        border-style: none;
+        padding-right: 300px;
+        margin-left: 50%;
+      }
+
+      .eat {
+        .listMedia();
+      }
+      .sleep {
+        .listMedia();
+      }
+      .video {
+        .listMedia();
+      }
+      .game {
+        .listMedia();
+      }
+      .type {
+        font-weight: bold;
+        margin: 4px 0 4px 4px;
+        .listMedia();
+      }
+    }
+  }
+  .workHist {
+    margin-left: 20%;
+  }
+  .workSection {
+    width: 100%;
+
+    margin-left: 15%;
+    .apple {
+      margin-left: 30%;
+    }
+    .software {
+      margin-left: 15%;
+    }
+  }
+
+  address {
+    margin-left: 25%;
+  }
+}
