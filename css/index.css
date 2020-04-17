@@ -1,1 +1,597 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.borderLine {
+  border-style: none none solid none;
+  border-width: 1px;
+}
+.borderNone {
+  border-style: none;
+  width: 52%;
+  margin: 0 auto;
+}
+.workSectionBox {
+  width: 100%;
+  margin: 0 auto;
+}
+.skillBox {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: grey;
+  width: 412%;
+  font-weight: bold;
+  margin: 4px 0 4px 4px;
+}
+.container {
+  width: 100%;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+.headContainer {
+  background-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.headContainer img {
+  padding-left: 10%;
+  margin: 3% 0% 3% 25%;
+}
+.image {
+  margin-left: 30%;
+}
+.botContainer {
+  width: 80%;
+  margin: 0 auto;
+  border-style: none;
+}
+.botContainer .midSection {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.botContainer .midSection .aboutSection {
+  border-style: none;
+  width: 52%;
+  margin: 0 auto;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 1.5%;
+}
+.botContainer .skillSection {
+  margin-top: 1.5%;
+  margin-right: 20%;
+}
+.botContainer .skillSection .skills {
+  font-size: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  padding-right: 300px;
+}
+.botContainer .skillSection .eat {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: grey;
+  width: 412%;
+  font-weight: bold;
+  margin: 4px 0 4px 4px;
+}
+.botContainer .skillSection .sleep {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: grey;
+  width: 412%;
+  font-weight: bold;
+  margin: 4px 0 4px 4px;
+}
+.botContainer .skillSection .video {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: grey;
+  width: 412%;
+  font-weight: bold;
+  margin: 4px 0 4px 4px;
+}
+.botContainer .skillSection .game {
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: grey;
+  width: 412%;
+  font-weight: bold;
+  margin: 4px 0 4px 4px;
+}
+.botContainer .skillSection .type {
+  font-weight: bold;
+  margin: 4px 0 4px 4px;
+}
+h3 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 2% 0;
+}
+.workSection {
+  font-size: 25px;
+  width: 65%;
+  margin-left: 25%;
+}
+.workSection .workBox {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 80%;
+  margin-right: 20%;
+}
+.workSection .info {
+  display: flex;
+  justify-content: space-between;
+  border-style: none none solid none;
+  border-width: 1px;
+}
+.workSection .years {
+  display: flex;
+  justify-content: space-between;
+  border-style: none none solid none;
+  border-width: 1px;
+}
+.workSection .years .apple {
+  margin-left: 15%;
+}
+.workSection .company {
+  display: flex;
+  justify-content: space-between;
+  border-style: none none solid none;
+  border-width: 1px;
+}
+.workSection .company .microsoft {
+  margin-left: 15%;
+}
+.workSection .position {
+  display: flex;
+  justify-content: space-between;
+}
+.workSection .position .amazon {
+  margin-left: 8%;
+}
+address {
+  margin-top: 1%;
+  width: 65%;
+  margin-bottom: 1%;
+  margin-left: 40%;
+  font-size: 25px;
+}
+#copyright {
+  width: 15%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 1000px) {
+  .headContainer {
+    width: 100%;
+  }
+  .listMedia {
+    border-style: none;
+    list-style: circle;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .boxboi,
+  .boxboi2,
+  .boxboi3,
+  .boxboi4 {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  h1 {
+    margin-left: 20%;
+  }
+  .midSection {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    width: 100%;
+  }
+  .midSection .aboutHeader {
+    margin-left: 35%;
+  }
+  .midSection .aboutPara {
+    margin-left: 5%;
+    width: 120%;
+  }
+  .midSection .skillSection {
+    margin-top: 1.5%;
+    margin-right: 20%;
+  }
+  .midSection .skillSection .personal {
+    margin-left: 35%;
+  }
+  .midSection .skillSection .skills {
+    font-size: 25px;
+    border-style: none;
+    padding-right: 300px;
+    margin-left: 50%;
+  }
+  .midSection .skillSection .eat {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .sleep {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .video {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .game {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .type {
+    font-weight: bold;
+    margin: 4px 0 4px 4px;
+    border-style: none;
+    list-style: circle;
+  }
+  .workHist {
+    margin-left: 20%;
+  }
+  .workSection {
+    width: 100%;
+    margin-left: 15%;
+  }
+  .workSection .apple {
+    margin-left: 30%;
+  }
+  .workSection .software {
+    margin-left: 15%;
+  }
+  address {
+    margin-left: 25%;
+  }
+  img {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .headContainer {
+    width: 100%;
+  }
+  .listMedia {
+    border-style: none;
+    list-style: circle;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .boxboi,
+  .boxboi2,
+  .boxboi3,
+  .boxboi4 {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  h1 {
+    margin-left: 20%;
+  }
+  .midSection {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    width: 100%;
+  }
+  .midSection .aboutHeader {
+    margin-left: 35%;
+  }
+  .midSection .aboutPara {
+    margin-left: 5%;
+    width: 120%;
+  }
+  .midSection .skillSection {
+    margin-top: 1.5%;
+    margin-right: 20%;
+  }
+  .midSection .skillSection .personal {
+    margin-left: 35%;
+  }
+  .midSection .skillSection .skills {
+    font-size: 25px;
+    border-style: none;
+    padding-right: 300px;
+    margin-left: 50%;
+  }
+  .midSection .skillSection .eat {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .sleep {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .video {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .game {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .type {
+    font-weight: bold;
+    margin: 4px 0 4px 4px;
+    border-style: none;
+    list-style: circle;
+  }
+  .workHist {
+    margin-left: 20%;
+  }
+  .workSection {
+    width: 100%;
+    margin-left: 15%;
+  }
+  .workSection .apple {
+    margin-left: 30%;
+  }
+  .workSection .software {
+    margin-left: 15%;
+  }
+  address {
+    margin-left: 25%;
+  }
+  img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .listMedia {
+    border-style: none;
+    list-style: circle;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .boxboi,
+  .boxboi2,
+  .boxboi3,
+  .boxboi4 {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+  h1 {
+    margin-left: 20%;
+  }
+  .midSection {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25%;
+    width: 100%;
+  }
+  .midSection .aboutHeader {
+    margin-left: 35%;
+  }
+  .midSection .aboutPara {
+    margin-left: 5%;
+    width: 120%;
+  }
+  .midSection .skillSection {
+    margin-top: 1.5%;
+    margin-right: 20%;
+  }
+  .midSection .skillSection .personal {
+    margin-left: 35%;
+  }
+  .midSection .skillSection .skills {
+    font-size: 25px;
+    border-style: none;
+    padding-right: 300px;
+    margin-left: 50%;
+  }
+  .midSection .skillSection .eat {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .sleep {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .video {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .game {
+    border-style: none;
+    list-style: circle;
+  }
+  .midSection .skillSection .type {
+    font-weight: bold;
+    margin: 4px 0 4px 4px;
+    border-style: none;
+    list-style: circle;
+  }
+  .workHist {
+    margin-left: 20%;
+  }
+  .workSection {
+    width: 100%;
+    margin-left: 15%;
+  }
+  .workSection .apple {
+    margin-left: 30%;
+  }
+  .workSection .software {
+    margin-left: 15%;
+  }
+  address {
+    margin-left: 25%;
+  }
+}
